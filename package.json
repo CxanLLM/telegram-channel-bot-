@@ -1,0 +1,24 @@
+{
+  "name": "telegram-channel-bot",
+  "version": "1.0.0",
+  "description": "Telegram Channel Posting Bot for Cloudflare Workers",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240919.0",
+    "wrangler": "^3.26.0"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "cloudflare-workers"
+  ],
+  "author": "CxanLLM",
+  "license": "MIT"
+}
