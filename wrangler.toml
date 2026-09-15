@@ -1,0 +1,22 @@
+name = "telegram-channel-bot"
+main = "src/index.js"
+compatibility_date = "2024-11-15"
+compatibility_flags = ["nodejs_compat"]
+
+# KV Namespace Binding
+[[kv_namespaces]]
+binding = "BOT_KV"
+id = "YOUR_KV_ID_HERE"
+
+[env.production]
+routes = [
+  { pattern = "*.example.com/*", zone_name = "example.com" }
+]
+
+[build]
+command = "npm install"
+cwd = "./"
+watch_paths = ["src/**/*.js"]
+
+[build.upload]
+format = "service-worker"
